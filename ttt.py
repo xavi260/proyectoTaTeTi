@@ -2,7 +2,7 @@
 
 import random #para generar numeros aleatoreos
 import os # para borrar pantalla
-from board import *
+from board import * 
 
 # variables
 movPc=random.randint(0,8)
