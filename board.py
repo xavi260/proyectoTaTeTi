@@ -1,5 +1,7 @@
 
-def printBoard():
+def printBoard(board, text):
+	print(text)
+	print()
 	print(" ______")
 	print("|" + board[6] + "|" + board[7] + "|" + board[8] + "|")
 	print(" ------")
