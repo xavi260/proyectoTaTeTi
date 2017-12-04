@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 
-
-
 import random #para generar numeros aleatoreos
 import os # para borrar pantalla
-
+from board import *
 
 # variables
 movPc=random.randint(0,8)
@@ -20,16 +18,7 @@ boardins=["7","8","9",
 
 ins="Debes introducir los movimientos indicando un numero del 1 al 9 de este modo"
 
-# funcion para imprimir tablero
-def printBoard():
-	print(" ______")
-	print("|" + board[6] + "|" + board[7] + "|" + board[8] + "|")
-	print(" ------")
-	print("|" + board[3] + "|" + board[4] + "|" + board[5] + "|")
-	print( " ------")
-	print("|" + board[0] + "|" + board[1] + "|" + board[2] + "|")
-	print( " ------")
-	print
+
 
 # Funcion para comprobar ganador
 def checkWinner():
