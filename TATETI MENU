@@ -11,7 +11,7 @@ print("   |_|          |_|  |_|          |_|          |______|          |_|     
 
 
 
-print("                                                  
+print("                                                  ")
 
 print("*Para jugar ta-te-ti, debes elejir entre (X / O) , y lograr hacer 3 en raya , el primero jugador en hacerlo gana...")
 print("tus opciones, estan definidas por numeros del 1 al 9...") 
