@@ -10,3 +10,6 @@ def printBoard(board, text):
 	print("|" + board[0] + "|" + board[1] + "|" + board[2] + "|")
 	print( " ------")
 	print
+
+def createBoard():
+    return ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
