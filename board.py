@@ -1,7 +1,8 @@
+from os import system
 
-def printBoard(board, text):
-	print(text)
-	print()
+def printBoard(board):
+	system("clear")
+	
 	print(" ______")
 	print("|" + board[6] + "|" + board[7] + "|" + board[8] + "|")
 	print(" ------")
@@ -9,7 +10,7 @@ def printBoard(board, text):
 	print( " ------")
 	print("|" + board[0] + "|" + board[1] + "|" + board[2] + "|")
 	print( " ------")
-	print
+	print()
 
 def createBoard():
     return ["-", "-", "-", "-", "-", "-", "-", "-", "-"]

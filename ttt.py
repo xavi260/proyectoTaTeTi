@@ -9,20 +9,22 @@ computerMovements = []
 turnCount = 0
 
 while True:
-	message = "Ingrese Posicion:"
-	printBoard(board, message)
+	printBoard(board)
 	
 	humanPlay(board, humanMovements)
 	if isVictory(humanMovements):
+		printBoard(board)
 		print("Ganaste")
 		break
 	
 	computerPlay(board, computerMovements)
-	if isVictory(humanMovements):
+	if isVictory(computerMovements):
+		printBoard(board)
 		print("Ganaste")
 		break
 	
 	turnCount += 1
-	if turncount == 9:
+	if turnCount == 9:
+		printBoard(board)
 		print("Empate")
 		break

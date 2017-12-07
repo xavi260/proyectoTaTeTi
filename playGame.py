@@ -1,8 +1,8 @@
-from random import randomint 
+from random import randint 
 
 def humanPlay(board, humanMovements):
 	while True:
-		position = int(input("Ingrese Posicion: ")
+		position = int(input("Ingrese Posicion: "))
 	
 		print(board[position])
 		if board[position] == "-":
@@ -20,7 +20,7 @@ def computerPlay(board, computerMovements):
 			computerMovements.append(position)
 			break
 
-def isVictory(board, movements):
+def isVictory(movements):
 	victoryCondition = []
 	victoryCondition.append([0, 1, 2])
 	victoryCondition.append([3, 4, 5])
@@ -32,5 +32,5 @@ def isVictory(board, movements):
 	victoryCondition.append([8, 4, 0])
 	
 	for condition in victoryCondition:
-		if all(i in movements for i in condition):
-			return true
+		if set(condition).issubset(movements):
+			return True
